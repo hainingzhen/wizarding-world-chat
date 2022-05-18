@@ -1,23 +1,31 @@
 package com.wizard.chat.models;
 
-import javax.persistence.Entity;
+import javax.persistence.*;
 
 @Entity
-public class User {
+public class Wizard {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @Column(name = "firstname")
     private String firstname;
+    @Column(name = "lastname")
     private String lastname;
+
+    @Column(name = "house")
     private String house;
+    @Column(name = "username")
     private String username;
 
-    public User() {}
+    public Wizard() {}
 
-    public User(Long id,
-                String firstname,
-                String lastname,
-                String house,
-                String username) {
+    public Wizard(Long id,
+                  String firstname,
+                  String lastname,
+                  String house,
+                  String username) {
         this.id = id;
         this.firstname = firstname;
         this.lastname = lastname;

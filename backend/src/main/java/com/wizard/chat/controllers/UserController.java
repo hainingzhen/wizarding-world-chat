@@ -61,7 +61,9 @@ public class UserController {
     )
     public ResponseEntity<Wizard> addNewWizard(@RequestBody Wizard wizard) {
 
-        System.out.println(wizard);
+        System.out.println(wizard.toString());
+
+        userService.addNewWizard(wizard);
 
         return ResponseEntity.ok().build();
     }

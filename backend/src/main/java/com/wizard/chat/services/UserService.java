@@ -29,4 +29,8 @@ public class UserService {
     public List<Wizard> findWizardsByHouse(String house) {
         return userRepository.findByHouse(house);
     }
+
+    public void addNewWizard(Wizard wizard){
+        userRepository.save(wizard);
+    }
 }

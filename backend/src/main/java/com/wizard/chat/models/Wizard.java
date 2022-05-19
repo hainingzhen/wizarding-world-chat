@@ -97,4 +97,14 @@ public class Wizard {
         this.messages = messages;
     }
 
+    @Override
+    public String toString() {
+        return "Wizard{" +
+                "id=" + id +
+                ", firstname='" + firstname + '\'' +
+                ", lastname='" + lastname + '\'' +
+                ", house='" + house + '\'' +
+                ", username='" + username + '\'' +
+                '}';
+    }
 }

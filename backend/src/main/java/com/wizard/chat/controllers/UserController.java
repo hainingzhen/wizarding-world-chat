@@ -23,6 +23,14 @@ public class UserController {
         this.userService = userService;
     }
 
+
+
+    // Get all wizards or get wizards by their house
+    /*
+        endpoint:
+            localhost:8080/wizards
+            localhost:8080/wizards?house=<house name>
+     */
     @GetMapping("/wizards")
     public ResponseEntity<List<Wizard>> getAllWizards(
             @RequestParam(required = false, defaultValue = "") String house) {
@@ -44,6 +52,12 @@ public class UserController {
         }
     }
 
+
+    // Get a single wizard by its ID
+    /*
+        endpoint:
+            localhost:8080/<id>
+     */
     @GetMapping("/wizards/{id}")
     public ResponseEntity<Wizard> getWizard(@PathVariable Long id) {
         Optional<Wizard> wizardOptional = userService.getWizard(id);
@@ -55,6 +69,22 @@ public class UserController {
         return ResponseEntity.notFound().build();
     }
 
+
+    // Adding one new wizard
+    /*
+
+        endpoint:
+            localhost:8080/addNewWizard
+
+        JSON:
+            {
+                "firstname": "",
+                "lastname": "",
+                "house": "",
+                "username": ""
+            }
+
+     */
     @PostMapping(
             value = "/addNewWizard",
             consumes = "application/json"
@@ -73,7 +103,10 @@ public class UserController {
         return ResponseEntity.ok().body(addedWizard);
     }
 
-    // NEED TO DO DELETE WIZARD
+
+
+    // Delete a wizard
+
 
 
 }

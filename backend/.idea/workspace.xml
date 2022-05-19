@@ -7,10 +7,10 @@
     <list default="true" id="42c7f790-f482-4237-8c4a-2654ab4772de" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wizard/chat/controllers/RoomController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wizard/chat/controllers/RoomController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wizard/chat/repositories/RoomRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wizard/chat/repositories/RoomRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wizard/chat/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wizard/chat/controllers/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wizard/chat/services/RoomService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wizard/chat/services/RoomService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/wizard/chat/controllers/RoomController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wizard/chat/controllers/RoomController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wizard/chat/repositories/RoomRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wizard/chat/repositories/RoomRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/wizard/chat/services/RoomService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wizard/chat/services/RoomService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/data.sql" afterDir="false" />
     </list>
@@ -83,6 +83,9 @@
       <updated>1652883173312</updated>
     </task>
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.sql" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

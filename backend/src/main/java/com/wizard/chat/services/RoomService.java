@@ -3,6 +3,7 @@ package com.wizard.chat.services;
 import com.wizard.chat.models.Room;
 import com.wizard.chat.repositories.RoomRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -27,7 +28,7 @@ public class RoomService {
         return roomRepository.save(room);
     }
 
-    public Room addWizardToRoom(Long roomId, Long wizardId) {
+    public Room addWizardToRoom(Long roomId, Long wizardId) throws DataIntegrityViolationException {
         roomRepository.addWizardToRoom(roomId, wizardId);
         return null;
     }

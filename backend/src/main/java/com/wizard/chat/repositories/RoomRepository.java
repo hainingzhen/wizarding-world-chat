@@ -18,4 +18,7 @@ public interface RoomRepository extends JpaRepository<Room, Long> {
             nativeQuery = true
     )
     void addWizardToRoom(Long roomId, Long wizardId);
+
+
+
 }

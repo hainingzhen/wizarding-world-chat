@@ -22,4 +22,13 @@ public class RoomService {
     public List<Room> getAllRooms() {
         return roomRepository.findAll();
     }
+
+    public Room addNewRoom(Room room) {
+        return roomRepository.save(room);
+    }
+
+    public Room addWizardToRoom(Long roomId, Long wizardId) {
+        roomRepository.addWizardToRoom(roomId, wizardId);
+        return null;
+    }
 }

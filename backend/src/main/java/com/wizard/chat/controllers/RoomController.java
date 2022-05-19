@@ -5,9 +5,7 @@ import com.wizard.chat.models.Room;
 import com.wizard.chat.services.RoomService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -29,11 +27,20 @@ public class RoomController {
         return ResponseEntity.ok().body(rooms);
     }
 
-//    @PostMapping(
-//            path = "/addNewRoom",
-//            consumes = "application/json"
-//    )
-//    public ResponseEntity<Room> addNewRoom() {
-//
-//    }
+    @PostMapping(
+            path = "/addNewRoom",
+            consumes = "application/json"
+    )
+    public ResponseEntity<Room> addNewRoom(@RequestBody Room room) {
+        Room addedRoom = roomService.addNewRoom(room);
+        return ResponseEntity.ok().body(addedRoom);
+    }
+
+    @PostMapping(path = "/wizardToRoom")
+    public ResponseEntity<Room> addWizardToRoom(
+            @RequestParam(required = true) Long roomId,
+            @RequestParam(required = true) Long wizardId) {
+        roomService.addWizardToRoom(roomId, wizardId);
+        return ResponseEntity.ok().build();
+    }
 }

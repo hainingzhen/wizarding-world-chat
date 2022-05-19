@@ -21,8 +21,6 @@ INSERT INTO ROOMS (name) VALUES ('Slytherin Common Room');
 INSERT INTO ROOMS (name) VALUES ('Ravenclaw Common Room');
 
 INSERT INTO WIZARDS_ROOMS (room_id, wizard_id) VALUES (1, 1);
-INSERT INTO WIZARDS_ROOMS (room_id, wizard_id) VALUES (1, 1);
-INSERT INTO WIZARDS_ROOMS (room_id, wizard_id) VALUES (1, 2);
 INSERT INTO WIZARDS_ROOMS (room_id, wizard_id) VALUES (1, 2);
 INSERT INTO WIZARDS_ROOMS (room_id, wizard_id) VALUES (1, 3);
 INSERT INTO WIZARDS_ROOMS (room_id, wizard_id) VALUES (1, 6);

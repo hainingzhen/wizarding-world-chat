@@ -11,9 +11,9 @@ public class Message {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column
     private Long id;
-    @Column(name = "content")
+    @Column(name = "content", nullable = false)
     private String content;
-    @Column(name = "datetime")
+    @Column(name = "datetime", nullable = false)
     private LocalDateTime dateTime;
 
     @ManyToOne

@@ -15,7 +15,7 @@ public class Room {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column
     private Long id;
-    @Column(name = "name")
+    @Column(name = "name", nullable = false)
     private String name;
 
     @JsonIgnoreProperties({"room"})
@@ -28,7 +28,7 @@ public class Room {
             joinColumns = @JoinColumn(name = "room_id"),
             inverseJoinColumns = @JoinColumn(name = "wizard_id")
     )
-    @JsonIgnoreProperties(value = {"rooms"})
+    @JsonIgnoreProperties(value = {"rooms", "messages"})
     private Set<Wizard> wizards;
 
     public Room() {}

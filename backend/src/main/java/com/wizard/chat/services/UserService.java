@@ -3,6 +3,8 @@ package com.wizard.chat.services;
 import com.wizard.chat.models.Wizard;
 import com.wizard.chat.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataAccessException;
+import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -30,7 +32,7 @@ public class UserService {
         return userRepository.findByHouse(house);
     }
 
-    public void addNewWizard(Wizard wizard){
-        userRepository.save(wizard);
+    public Wizard addNewWizard(Wizard wizard) throws DataIntegrityViolationException {
+        return userRepository.save(wizard);
     }
 }

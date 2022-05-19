@@ -1,10 +1,10 @@
 package com.wizard.chat.controllers;
 
-
 import com.wizard.chat.models.Houses;
 import com.wizard.chat.models.Wizard;
 import com.wizard.chat.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -61,10 +61,19 @@ public class UserController {
     )
     public ResponseEntity<Wizard> addNewWizard(@RequestBody Wizard wizard) {
 
-        System.out.println(wizard.toString());
+        Wizard addedWizard;
 
-        userService.addNewWizard(wizard);
+        try {
+            addedWizard = userService.addNewWizard(wizard);
+        }
+        catch (DataIntegrityViolationException e) {
+            return ResponseEntity.badRequest().build();
+        }
 
-        return ResponseEntity.ok().build();
+        return ResponseEntity.ok().body(addedWizard);
     }
+
+    // NEED TO DO DELETE WIZARD
+
+
 }

@@ -14,13 +14,13 @@ public class Wizard {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column
     private Long id;
-    @Column(name = "firstname")
+    @Column(name = "firstname", nullable = false)
     private String firstname;
-    @Column(name = "lastname")
+    @Column(name = "lastname", nullable = false)
     private String lastname;
-    @Column(name = "house")
+    @Column(name = "house", nullable = false)
     private String house;
-    @Column(name = "username")
+    @Column(name = "username", nullable = false, unique = true)
     private String username;
 
     @JsonIgnoreProperties({"wizard"})

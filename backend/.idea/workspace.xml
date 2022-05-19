@@ -5,13 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42c7f790-f482-4237-8c4a-2654ab4772de" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wizard/chat/controllers/RoomController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wizard/chat/controllers/RoomController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wizard/chat/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wizard/chat/controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wizard/chat/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wizard/chat/models/Wizard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wizard/chat/models/Message.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wizard/chat/models/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wizard/chat/models/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wizard/chat/models/Wizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wizard/chat/models/Wizard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wizard/chat/repositories/MessageRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wizard/chat/repositories/RoomRepository.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wizard/chat/repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wizard/chat/repositories/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wizard/chat/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wizard/chat/services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wizard/chat/controllers/RoomController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wizard/chat/controllers/RoomController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wizard/chat/controllers/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wizard/chat/controllers/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wizard/chat/models/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wizard/chat/models/Message.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wizard/chat/models/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wizard/chat/models/Room.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wizard/chat/repositories/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wizard/chat/repositories/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wizard/chat/services/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wizard/chat/services/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/data.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,13 +31,22 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -51,6 +70,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
   </component>
   <component name="RunManager">

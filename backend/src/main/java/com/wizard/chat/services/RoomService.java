@@ -7,6 +7,7 @@ import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class RoomService {
@@ -24,12 +25,15 @@ public class RoomService {
         return roomRepository.findAll();
     }
 
+    public Optional<Room> getRoom(Long id) {
+        return roomRepository.findById(id);
+    }
+
     public Room addNewRoom(Room room) {
         return roomRepository.save(room);
     }
 
-    public Room addWizardToRoom(Long roomId, Long wizardId) throws DataIntegrityViolationException {
+    public void addWizardToRoom(Long roomId, Long wizardId) throws DataIntegrityViolationException {
         roomRepository.addWizardToRoom(roomId, wizardId);
-        return null;
     }
 }

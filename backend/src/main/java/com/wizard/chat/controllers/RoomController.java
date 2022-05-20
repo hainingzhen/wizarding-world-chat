@@ -8,7 +8,9 @@ import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.swing.text.html.Option;
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 public class RoomController {
@@ -23,7 +25,7 @@ public class RoomController {
     }
 
 
-    // Getting all chatrooms available
+    // Getting all chat rooms available
     /*
         endpoint:
             localhost:8080/rooms
@@ -32,6 +34,23 @@ public class RoomController {
     public ResponseEntity<List<Room>> getAllRooms() {
         List<Room> rooms = roomService.getAllRooms();
         return ResponseEntity.ok().body(rooms);
+    }
+
+
+    // Get a chat room
+    /*
+        endpoint:
+            localhost:8080/rooms/<id>
+     */
+    @GetMapping(path = "/rooms/{id}")
+    public ResponseEntity<Room> getRoom(@PathVariable Long id) {
+        Optional<Room> roomOptional = roomService.getRoom(id);
+
+        if (roomOptional.isPresent()) {
+            Room room = roomOptional.get();
+            return ResponseEntity.ok().body(room);
+        }
+        return ResponseEntity.notFound().build();
     }
 
 
@@ -67,12 +86,13 @@ public class RoomController {
             @RequestParam(required = true) Long wizardId) {
         try {
             roomService.addWizardToRoom(roomId, wizardId);
+            return ResponseEntity
+                    .ok()
+                    .body(roomService.getRoom(roomId).get());
         }
         catch (DataIntegrityViolationException dive) {
-            System.out.println(dive);
             return ResponseEntity.badRequest().build();
         }
-        return ResponseEntity.ok().build();
     }
 
 

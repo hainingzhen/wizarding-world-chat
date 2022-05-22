@@ -3,7 +3,6 @@ package com.wizard.chat.services;
 import com.wizard.chat.models.Wizard;
 import com.wizard.chat.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.dao.DataAccessException;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Service;
 

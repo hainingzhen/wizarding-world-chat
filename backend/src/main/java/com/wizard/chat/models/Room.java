@@ -1,6 +1,5 @@
 package com.wizard.chat.models;
 
-
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import javax.persistence.*;
@@ -22,21 +21,15 @@ public class Room {
     @OneToMany(mappedBy = "room")
     private List<Message> messages;
 
-    @ManyToMany(cascade = CascadeType.ALL)
-    @JoinTable(
-            name = "wizards_rooms",
-            joinColumns = @JoinColumn(name = "room_id"),
-            inverseJoinColumns = @JoinColumn(name = "wizard_id")
-    )
-    @JsonIgnoreProperties(value = {"rooms", "messages"})
-    private Set<Wizard> wizards;
+    @OneToMany(mappedBy = "wizard")
+    private List<RoomMember> wizards;
 
     public Room() {}
 
     public Room(Long id,
                 String name,
                 List<Message> messages,
-                Set<Wizard> wizards) {
+                List<RoomMember> wizards) {
         this.id = id;
         this.name = name;
         this.messages = messages;
@@ -67,11 +60,11 @@ public class Room {
         this.messages = messages;
     }
 
-    public Set<Wizard> getWizards() {
+    public List<RoomMember> getWizards() {
         return wizards;
     }
 
-    public void setWizards(Set<Wizard> wizards) {
+    public void setWizards(List<RoomMember> wizards) {
         this.wizards = wizards;
     }
 }

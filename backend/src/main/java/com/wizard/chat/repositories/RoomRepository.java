@@ -8,6 +8,8 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 @Repository
 public interface RoomRepository extends JpaRepository<Room, Long> {
 
@@ -18,7 +20,5 @@ public interface RoomRepository extends JpaRepository<Room, Long> {
             nativeQuery = true
     )
     void addWizardToRoom(Long roomId, Long wizardId);
-
-
 
 }

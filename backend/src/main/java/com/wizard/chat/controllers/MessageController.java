@@ -3,6 +3,7 @@ package com.wizard.chat.controllers;
 
 import com.wizard.chat.models.Message;
 import com.wizard.chat.services.MessageService;
+import com.wizard.chat.services.RoomService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -15,6 +16,8 @@ public class MessageController {
 
     @Autowired
     private MessageService messageService;
+    @Autowired
+    private RoomService roomService;
 
     public MessageController() {}
 
@@ -55,13 +58,17 @@ public class MessageController {
             @RequestBody Map<String, String> payload) {
 
         System.out.println(payload.toString());
+        System.out.println(payload.get("content"));
 
         // check if wizard is in that room
 
+
         // if so then append message
 
-        // if not return error response
+        // if not return error responser
 
         return ResponseEntity.ok().build();
+
+
     }
 }

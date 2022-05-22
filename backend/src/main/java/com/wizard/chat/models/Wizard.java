@@ -27,9 +27,8 @@ public class Wizard {
     @OneToMany(mappedBy = "wizard")
     private List<Message> messages;
 
-    @ManyToMany(mappedBy = "wizards")
-    @JsonIgnoreProperties(value = {"wizards"})
-    private Set<Room> rooms;
+    @OneToMany(mappedBy = "room")
+    private List<RoomMember> rooms;
 
     public Wizard() {}
 
@@ -39,7 +38,7 @@ public class Wizard {
                   String house,
                   String username,
                   List<Message> messages,
-                  Set<Room> rooms) {
+                  List<RoomMember> rooms) {
         this.id = id;
         this.firstname = firstname;
         this.lastname = lastname;
@@ -95,6 +94,14 @@ public class Wizard {
 
     public void setMessages(List<Message> messages) {
         this.messages = messages;
+    }
+
+    public List<RoomMember> getRooms() {
+        return rooms;
+    }
+
+    public void setRooms(List<RoomMember> rooms) {
+        this.rooms = rooms;
     }
 
     @Override

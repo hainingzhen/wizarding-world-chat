@@ -7,12 +7,18 @@
     <list default="true" id="42c7f790-f482-4237-8c4a-2654ab4772de" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wizard/chat/controllers/MessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wizard/chat/controllers/MessageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wizard/chat/controllers/RoomController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wizard/chat/controllers/RoomController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wizard/chat/services/RoomService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wizard/chat/services/RoomService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wizard/chat/models/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wizard/chat/models/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wizard/chat/models/RoomMember.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wizard/chat/models/RoomMemberKey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wizard/chat/models/Wizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wizard/chat/models/Wizard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wizard/chat/repositories/RoomRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wizard/chat/repositories/RoomRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wizard/chat/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wizard/chat/services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/wizard/chat/controllers/MessageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wizard/chat/controllers/MessageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wizard/chat/controllers/RoomController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wizard/chat/controllers/RoomController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wizard/chat/controllers/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wizard/chat/controllers/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wizard/chat/services/RoomService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wizard/chat/services/RoomService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wizard/chat/models/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wizard/chat/models/Room.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wizard/chat/models/RoomMember.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wizard/chat/models/RoomMember.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wizard/chat/models/Wizard.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wizard/chat/models/Wizard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wizard/chat/services/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wizard/chat/services/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/data.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +29,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
